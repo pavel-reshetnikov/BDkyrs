@@ -22,31 +22,32 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    const uint offsetsAndSize[22];
-    char stringdata0[185];
+    const uint offsetsAndSize[24];
+    char stringdata0[176];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs), len 
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 10), // "MainWindow"
-QT_MOC_LITERAL(11, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(33, 0), // ""
-QT_MOC_LITERAL(34, 23), // "on_pushButton_2_clicked"
-QT_MOC_LITERAL(58, 21), // "on_comboBox_activated"
-QT_MOC_LITERAL(80, 5), // "index"
-QT_MOC_LITERAL(86, 20), // "on_tableView_clicked"
-QT_MOC_LITERAL(107, 11), // "QModelIndex"
-QT_MOC_LITERAL(119, 23), // "on_pushButton_3_clicked"
-QT_MOC_LITERAL(143, 19), // "on_action_triggered"
-QT_MOC_LITERAL(163, 21) // "on_action_2_triggered"
+QT_MOC_LITERAL(11, 23), // "on_pushButton_2_clicked"
+QT_MOC_LITERAL(35, 0), // ""
+QT_MOC_LITERAL(36, 21), // "on_comboBox_activated"
+QT_MOC_LITERAL(58, 5), // "index"
+QT_MOC_LITERAL(64, 20), // "on_tableView_clicked"
+QT_MOC_LITERAL(85, 11), // "QModelIndex"
+QT_MOC_LITERAL(97, 19), // "on_action_triggered"
+QT_MOC_LITERAL(117, 21), // "on_action_2_triggered"
+QT_MOC_LITERAL(139, 22), // "on_lineEdit_textEdited"
+QT_MOC_LITERAL(162, 4), // "arg1"
+QT_MOC_LITERAL(167, 8) // "readJson"
 
     },
-    "MainWindow\0on_pushButton_clicked\0\0"
-    "on_pushButton_2_clicked\0on_comboBox_activated\0"
-    "index\0on_tableView_clicked\0QModelIndex\0"
-    "on_pushButton_3_clicked\0on_action_triggered\0"
-    "on_action_2_triggered"
+    "MainWindow\0on_pushButton_2_clicked\0\0"
+    "on_comboBox_activated\0index\0"
+    "on_tableView_clicked\0QModelIndex\0"
+    "on_action_triggered\0on_action_2_triggered\0"
+    "on_lineEdit_textEdited\0arg1\0readJson"
 };
 #undef QT_MOC_LITERAL
 
@@ -65,20 +66,20 @@ static const uint qt_meta_data_MainWindow[] = {
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
        1,    0,   56,    2, 0x08,    1 /* Private */,
-       3,    0,   57,    2, 0x08,    2 /* Private */,
-       4,    1,   58,    2, 0x08,    3 /* Private */,
-       6,    1,   61,    2, 0x08,    5 /* Private */,
+       3,    1,   57,    2, 0x08,    2 /* Private */,
+       5,    1,   60,    2, 0x08,    4 /* Private */,
+       7,    0,   63,    2, 0x08,    6 /* Private */,
        8,    0,   64,    2, 0x08,    7 /* Private */,
-       9,    0,   65,    2, 0x08,    8 /* Private */,
-      10,    0,   66,    2, 0x08,    9 /* Private */,
+       9,    1,   65,    2, 0x08,    8 /* Private */,
+      11,    0,   68,    2, 0x08,   10 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    4,
+    QMetaType::Void, 0x80000000 | 6,    4,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    5,
-    QMetaType::Void, 0x80000000 | 7,    5,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   10,
     QMetaType::Void,
 
        0        // eod
@@ -90,13 +91,13 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
-        case 1: _t->on_pushButton_2_clicked(); break;
-        case 2: _t->on_comboBox_activated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 3: _t->on_tableView_clicked((*reinterpret_cast< std::add_pointer_t<QModelIndex>>(_a[1]))); break;
-        case 4: _t->on_pushButton_3_clicked(); break;
-        case 5: _t->on_action_triggered(); break;
-        case 6: _t->on_action_2_triggered(); break;
+        case 0: _t->on_pushButton_2_clicked(); break;
+        case 1: _t->on_comboBox_activated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->on_tableView_clicked((*reinterpret_cast< std::add_pointer_t<QModelIndex>>(_a[1]))); break;
+        case 3: _t->on_action_triggered(); break;
+        case 4: _t->on_action_2_triggered(); break;
+        case 5: _t->on_lineEdit_textEdited((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 6: _t->readJson(); break;
         default: ;
         }
     }
@@ -110,7 +111,7 @@ const QMetaObject MainWindow::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t
 , QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<const QModelIndex &, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<const QModelIndex &, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<const QString &, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,

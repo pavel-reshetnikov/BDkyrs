@@ -56,7 +56,7 @@ OBJECTS       = debug/main.o \
 		debug/mainwindow.o \
 		debug/moc_mainwindow.o
 
-DIST          =  mainwindow.h main.cpp \
+DIST          = bddan.json mainwindow.h main.cpp \
 		mainwindow.cpp
 QMAKE_TARGET  = kyrsprojectBD
 DESTDIR        = debug\ #avoid trailing-slash linebreak
@@ -254,6 +254,16 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqltablemodel.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqlquerymodel.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QJsonObject \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsonobject.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsonvalue.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcborvalue.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qdatetime.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcalendar.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcborcommon.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/quuid.h \
 		debug/moc_predefs.h \
 		../../../../Qt/6.3.1/mingw_64/bin/moc.exe
 	C:\Qt\6.3.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/user/Documents/kyrsprojectBD/debug/moc_predefs.h -IC:/Qt/6.3.1/mingw_64/mkspecs/win32-g++ -IC:/Users/user/Documents/kyrsprojectBD -IC:/Qt/6.3.1/mingw_64/include -IC:/Qt/6.3.1/mingw_64/include/QtWidgets -IC:/Qt/6.3.1/mingw_64/include/QtGui -IC:/Qt/6.3.1/mingw_64/include/QtSql -IC:/Qt/6.3.1/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
@@ -427,6 +437,16 @@ debug/main.o: main.cpp mainwindow.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqltablemodel.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqlquerymodel.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QJsonObject \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsonobject.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsonvalue.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcborvalue.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qdatetime.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcalendar.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcborcommon.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/quuid.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QApplication \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qapplication.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcoreapplication.h \
@@ -446,7 +466,6 @@ debug/main.o: main.cpp mainwindow.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/qpromise.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtGui/qguiapplication.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
@@ -596,8 +615,19 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqltablemodel.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqlquerymodel.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QJsonObject \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsonobject.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsonvalue.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcborvalue.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qdatetime.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcalendar.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcborcommon.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/quuid.h \
 		ui_mainwindow.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/QVariant \
+		../../../../Qt/6.3.1/mingw_64/include/QtGui/QAction \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QApplication \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qapplication.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/qcoreapplication.h \
@@ -617,39 +647,65 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtCore/qpromise.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtGui/qguiapplication.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QHeaderView \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qheaderview.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractitemview.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qframe.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QComboBox \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qcombobox.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qstyleoption.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtGui/qvalidator.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtCore/qregularexpression.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qslider.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractslider.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qstyle.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qtabbar.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QGroupBox \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qgroupbox.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QHeaderView \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qheaderview.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QLineEdit \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qlineedit.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtGui/qtextcursor.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtGui/qtextformat.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtGui/qpen.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtGui/qtextoption.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QMenu \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qmenu.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QMenuBar \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qmenubar.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QPushButton \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QStatusBar \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qstatusbar.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QTableView \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qtableview.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QVBoxLayout \
 		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QWidget \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/QSqlError \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqlerror.h \
 		../../../../Qt/6.3.1/mingw_64/include/QtSql/QSqlRecord \
-		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqlrecord.h
+		../../../../Qt/6.3.1/mingw_64/include/QtSql/qsqlrecord.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QString \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QJsonArray \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsonarray.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QJsonDocument \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qjsondocument.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/QFileDialog \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qfiledialog.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qdir.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qfile.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/qfileinfo.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtWidgets/qdialog.h \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QFile \
+		../../../../Qt/6.3.1/mingw_64/include/QtCore/QDir
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 

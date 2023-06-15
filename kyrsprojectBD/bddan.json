@@ -1,0 +1,9 @@
+{
+      "parameters":{
+      "HostName": "localhost",
+      "DatabaseName": "kyrsproject",
+      "Password":"12345",
+      "UserName":"postgres",
+      "Port": 5432
+      }
+}

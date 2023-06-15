@@ -6,28 +6,54 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>526</width>
-    <height>599</height>
+    <width>656</width>
+    <height>398</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QGroupBox" name="groupBox_2">
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid black;</string>
+      </property>
       <property name="title">
        <string/>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>Поиск</string>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit {
+  
+	background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 2px 12px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+QLineEdit:hover {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 0px;
+ 
+}
+</string>
          </property>
         </widget>
        </item>
@@ -35,22 +61,51 @@
      </widget>
     </item>
     <item>
-     <widget class="QTableView" name="tableView"/>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QTableView" name="tableView">
       <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string> Перейти</string>
+       <string notr="true">QTableView{
+gridline-color: black;
+selection-background-color: rgb(202, 202, 202);
+selection-color: rgb(0, 0, 0);
+border: 1px solid black;
+}</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QComboBox" name="comboBox">
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QComboBox {
+background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+QComboBox:hover {
+ background-color: white;
+  border: 3px solid black;
+  border-radius: 0px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+</string>
       </property>
       <item>
        <property name="text">
@@ -67,6 +122,11 @@
         <string>Таблица Результатов</string>
        </property>
       </item>
+      <item>
+       <property name="text">
+        <string>Таблица Спортсменов/Соревнований</string>
+       </property>
+      </item>
      </widget>
     </item>
    </layout>
@@ -76,11 +136,24 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>526</width>
+     <width>656</width>
      <height>26</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QMenu" name="menu">
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+color: black;
+	background-color: rgb(208, 208, 208);
+}
+QMenu:hover {
+	background-color: rgb(184, 184, 184);
+    color:red;
+}</string>
+    </property>
     <property name="title">
      <string>Редактор</string>
     </property>
@@ -92,7 +165,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action">
    <property name="text">
-    <string>Добавить</string>
+    <string>Добавить строку</string>
    </property>
   </action>
   <action name="action_2">
